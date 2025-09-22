@@ -1,0 +1,20 @@
+{
+  "name": "fitness-app",
+  "version": "1.0.0",
+  "description": "Ejemplos de código para una aplicación web de ejercicios físicos “fitness app”) que cubre Frontend, Backend, Docker, pipeline con Jenkins, despliegue en Kubernetes / OpenShift, servidor Nginx como reverse proxy / static server, y monitoreo con Prometheus + Grafana. Luego de ver esto, puedes ajustarlo al lenguaje/framework que prefieras. ## 📦 Estructura del Proyecto fitness-app/ ├── frontend/ │   ├── src/ │   │   ├── components/ │   │   ├── pages/ │   │   └── App.jsx │   ├── public/ │   ├── package.json │   └── Dockerfile ├── backend/ │   ├── src/ │   │   ├── controllers/ │   │   ├── routes/ │   │   ├── models/ │   │   └── app.js │   ├── package.json │   └── Dockerfile ├── nginx/ │   └── nginx.conf ├── k8s/ │   ├── frontend-deployment.yaml │   ├── backend-deployment.yaml │   ├── service-frontend.yaml │   ├── service-backend.yaml │   ├── ingress.yaml │   └── configmap-nginx.yaml ├── jenkins/ │   └── Jenkinsfile ├── prometheus/ │   ├── prometheus.yml │   └── serviceMonitor-backend.yaml  (si usas operator / kube-prometheus-stack) ├── grafana/ │   ├── dashboards/ │   └── datasources/ └── README.md",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maverickti-github/fitness-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maverickti-github/fitness-app/issues"
+  },
+  "homepage": "https://github.com/maverickti-github/fitness-app#readme"
+}
